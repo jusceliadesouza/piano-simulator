@@ -3,7 +3,8 @@
   --black: #0f0f0f;
   --dark-gray: #1c1c1c;
   --gray: #4b4b4b;
-  --light-gray: #8c8c8c;
+  --medium-gray: #8c8c8c;
+  --light-gray: #b2b2b2;
   --light-blue: #e3f2fd;
 }
 
@@ -21,8 +22,17 @@ body {
   width: 48.75rem;
   padding: 2.1875rem 2.5rem;
   border-radius: 1.25rem;
-  background-color: var(--black);
+
   color: var(--white);
+  background-color: var(--black);
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--light-gray);
 }
 
 header h2 {
@@ -65,7 +75,7 @@ header .column span {
   top: 50%;
   left: 0.3rem;
   
-  background-color: var(--light-gray);
+  background-color: var(--medium-gray);
   border-radius: inherit;
 
   transform: translateY(-50%);
@@ -76,7 +86,7 @@ header .column span {
 
 .keys-check input:checked::before {
   left: 2.1rem;
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 
 .piano-keys {
