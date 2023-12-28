@@ -93,3 +93,50 @@ header .column span {
   display: flex;
   margin-top: 2.5rem;
 }
+
+.piano-keys .key {
+  color: var(--light-gray);
+  text-transform: uppercase;
+
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.piano-keys .white {
+  width: 4.375rem;
+  height: 14.375rem;
+
+  background: linear-gradient(#fff 96%, #eee 4%);
+  border-radius: 0.625rem;
+}
+
+.piano-keys .black {
+  width: 2.75rem;
+  height: 8.75rem;
+  z-index: 2;
+
+  margin: 0 1.375rem 0 -1.375rem;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+
+  background: linear-gradient(#333, #000);
+}
+
+.piano-keys span {
+  width: 100%;
+  position: absolute;
+  bottom: 1.25rem;
+
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.piano-keys .white:active {
+  box-shadow: inset -0.3125rem .3125rem 1.25rem rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#fff 0%, #eee 100%);
+}
+
+.piano-keys .black:active {
+  box-shadow: inset -0.3125rem .3125rem 0.625rem rgba(255, 255, 255, 0.1);
+  background: linear-gradient(#000, #434343);
+}
