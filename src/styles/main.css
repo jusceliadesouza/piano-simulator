@@ -1,0 +1,54 @@
+:root {
+  --white: #f0f0f0;
+  --gray: #4b4b4b;
+  --light-blue: #e3f2fd;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--light-blue);
+
+  min-height: 100vh;
+}
+
+.container {
+  width: 48.75rem;
+  padding: 2.1875rem 2.5rem;
+  border-radius: 1.25rem;
+}
+
+header h2 {
+  font-size: 1.6rem;
+}
+
+header .column {
+  display: flex;
+  align-items: center;
+}
+
+header .column span {
+  margin-left: 1rem;
+
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.volume-slider input {
+  accent-color: var(--white);
+}
+
+.keys-check input {
+  width: 3.75rem;
+  height: 1.875rem;
+
+  appearance: none;
+
+  border-radius: 1.875rem;
+  background-color: var(--gray);
+
+  position: relative;
+  cursor: pointer;
+}
